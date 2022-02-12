@@ -60,6 +60,7 @@ class C_eksemplar_buku extends Controller
     {
         $eksemplarbuku = DB::table('eksemplarbuku')->where('kode_buku', $kode_buku)->get();
         //return view('edit_eksemplarbuku',['eksemplarbuku' => $eksemplarbuku]);
+        // id
         $id = DB::table('buku')->get();
         $data = array(
             'menu' => 'Eksemplar_buku',
